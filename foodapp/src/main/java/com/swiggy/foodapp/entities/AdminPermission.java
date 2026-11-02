@@ -1,0 +1,37 @@
+package com.swiggy.foodapp.entities;
+
+public enum AdminPermission {
+    // Finance Permissions
+    VIEW_PAYMENTS,
+    REVIEW_PAYMENT_FAILURES,
+    APPROVE_REFUNDS,
+    VIEW_SETTLEMENTS,
+    REVIEW_SETTLEMENTS,
+    APPROVE_SETTLEMENTS,
+    EXECUTE_PAYOUTS,
+    PROPOSE_COMMISSION_CHANGE,
+    APPROVE_COMMISSION_CHANGE,
+
+    // Operations Permissions
+    VIEW_RESTAURANTS,
+    SUSPEND_RESTAURANTS,
+    APPROVE_KYC,
+    VIEW_ORDERS,
+    MANAGE_ORDERS,
+    VIEW_DELIVERY,
+    DISPATCH_RIDER,
+
+    // Support Permissions
+    VIEW_CUSTOMERS,
+    BLOCK_CUSTOMER,
+    VIEW_TICKETS,
+    REPLY_TICKET,
+    RESOLVE_DISPUTE,
+
+    // Universal / Queue Permissions
+    CLAIM_TASK,
+    COMPLETE_TASK,
+    ESCALATE_TASK,
+    SYSTEM_SETTINGS,
+    ALL_PERMISSIONS
+}

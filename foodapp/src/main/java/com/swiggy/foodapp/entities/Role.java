@@ -1,0 +1,14 @@
+package com.swiggy.foodapp.entities;
+
+public enum Role {
+    CUSTOMER,
+    RESTAURANT_PARTNER,
+    DELIVERY_PARTNER,
+    SUPER_ADMIN,
+    FINANCE_MANAGER,
+    FINANCE_OFFICER,
+    OPERATIONS_MANAGER,
+    OPERATIONS_OFFICER,
+    SUPPORT_MANAGER,
+    SUPPORT_AGENT
+}

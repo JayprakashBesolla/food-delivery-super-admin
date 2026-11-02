@@ -1,0 +1,7 @@
+# Build artifacts
+**/target/
+**/.next/
+**/node_modules/
+*.log
+uploads/
+.vscode/
