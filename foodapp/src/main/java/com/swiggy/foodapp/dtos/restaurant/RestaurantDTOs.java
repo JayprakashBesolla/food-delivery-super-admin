@@ -56,48 +56,173 @@ public class RestaurantDTOs {
             return dto;
         }
 
-        public Long getId() { return id; }
-        public void setId(Long id) { this.id = id; }
-        public String getName() { return name; }
-        public void setName(String name) { this.name = name; }
-        public String getSlug() { return slug; }
-        public void setSlug(String slug) { this.slug = slug; }
-        public String getDescription() { return description; }
-        public void setDescription(String description) { this.description = description; }
-        public String getCuisines() { return cuisines; }
-        public void setCuisines(String cuisines) { this.cuisines = cuisines; }
-        public String getLogoUrl() { return logoUrl; }
-        public void setLogoUrl(String logoUrl) { this.logoUrl = logoUrl; }
-        public String getBannerUrl() { return bannerUrl; }
-        public void setBannerUrl(String bannerUrl) { this.bannerUrl = bannerUrl; }
-        public String getArea() { return area; }
-        public void setArea(String area) { this.area = area; }
-        public String getCity() { return city; }
-        public void setCity(String city) { this.city = city; }
-        public boolean isOpen() { return isOpen; }
-        public void setOpen(boolean open) { isOpen = open; }
-        public Double getAvgRating() { return avgRating; }
-        public void setAvgRating(Double avgRating) { this.avgRating = avgRating; }
-        public Integer getTotalRatings() { return totalRatings; }
-        public void setTotalRatings(Integer totalRatings) { this.totalRatings = totalRatings; }
-        public String getDeliveryTimeEstimate() { return deliveryTimeEstimate; }
-        public void setDeliveryTimeEstimate(String deliveryTimeEstimate) { this.deliveryTimeEstimate = deliveryTimeEstimate; }
-        public Double getDistanceKm() { return distanceKm; }
-        public void setDistanceKm(Double distanceKm) { this.distanceKm = distanceKm; }
-        public BigDecimal getCostForTwo() { return costForTwo; }
-        public void setCostForTwo(BigDecimal costForTwo) { this.costForTwo = costForTwo; }
-        public BigDecimal getDeliveryFee() { return deliveryFee; }
-        public void setDeliveryFee(BigDecimal deliveryFee) { this.deliveryFee = deliveryFee; }
-        public BigDecimal getFreeDeliveryThreshold() { return freeDeliveryThreshold; }
-        public void setFreeDeliveryThreshold(BigDecimal freeDeliveryThreshold) { this.freeDeliveryThreshold = freeDeliveryThreshold; }
-        public boolean isPureVeg() { return isPureVeg; }
-        public void setPureVeg(boolean pureVeg) { isPureVeg = pureVeg; }
-        public com.swiggy.foodapp.entities.BusinessSector getBusinessSector() { return businessSector; }
-        public void setBusinessSector(com.swiggy.foodapp.entities.BusinessSector businessSector) { this.businessSector = businessSector; }
-        public boolean isQuickCommerce() { return isQuickCommerce; }
-        public void setQuickCommerce(boolean quickCommerce) { isQuickCommerce = quickCommerce; }
-        public String getSectorDisplayName() { return sectorDisplayName; }
-        public void setSectorDisplayName(String sectorDisplayName) { this.sectorDisplayName = sectorDisplayName; }
+        public Long getId() {
+            return id;
+        }
+
+        public void setId(Long id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getSlug() {
+            return slug;
+        }
+
+        public void setSlug(String slug) {
+            this.slug = slug;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public String getCuisines() {
+            return cuisines;
+        }
+
+        public void setCuisines(String cuisines) {
+            this.cuisines = cuisines;
+        }
+
+        public String getLogoUrl() {
+            return logoUrl;
+        }
+
+        public void setLogoUrl(String logoUrl) {
+            this.logoUrl = logoUrl;
+        }
+
+        public String getBannerUrl() {
+            return bannerUrl;
+        }
+
+        public void setBannerUrl(String bannerUrl) {
+            this.bannerUrl = bannerUrl;
+        }
+
+        public String getArea() {
+            return area;
+        }
+
+        public void setArea(String area) {
+            this.area = area;
+        }
+
+        public String getCity() {
+            return city;
+        }
+
+        public void setCity(String city) {
+            this.city = city;
+        }
+
+        public boolean isOpen() {
+            return isOpen;
+        }
+
+        public void setOpen(boolean open) {
+            isOpen = open;
+        }
+
+        public Double getAvgRating() {
+            return avgRating;
+        }
+
+        public void setAvgRating(Double avgRating) {
+            this.avgRating = avgRating;
+        }
+
+        public Integer getTotalRatings() {
+            return totalRatings;
+        }
+
+        public void setTotalRatings(Integer totalRatings) {
+            this.totalRatings = totalRatings;
+        }
+
+        public String getDeliveryTimeEstimate() {
+            return deliveryTimeEstimate;
+        }
+
+        public void setDeliveryTimeEstimate(String deliveryTimeEstimate) {
+            this.deliveryTimeEstimate = deliveryTimeEstimate;
+        }
+
+        public Double getDistanceKm() {
+            return distanceKm;
+        }
+
+        public void setDistanceKm(Double distanceKm) {
+            this.distanceKm = distanceKm;
+        }
+
+        public BigDecimal getCostForTwo() {
+            return costForTwo;
+        }
+
+        public void setCostForTwo(BigDecimal costForTwo) {
+            this.costForTwo = costForTwo;
+        }
+
+        public BigDecimal getDeliveryFee() {
+            return deliveryFee;
+        }
+
+        public void setDeliveryFee(BigDecimal deliveryFee) {
+            this.deliveryFee = deliveryFee;
+        }
+
+        public BigDecimal getFreeDeliveryThreshold() {
+            return freeDeliveryThreshold;
+        }
+
+        public void setFreeDeliveryThreshold(BigDecimal freeDeliveryThreshold) {
+            this.freeDeliveryThreshold = freeDeliveryThreshold;
+        }
+
+        public boolean isPureVeg() {
+            return isPureVeg;
+        }
+
+        public void setPureVeg(boolean pureVeg) {
+            isPureVeg = pureVeg;
+        }
+
+        public com.swiggy.foodapp.entities.BusinessSector getBusinessSector() {
+            return businessSector;
+        }
+
+        public void setBusinessSector(com.swiggy.foodapp.entities.BusinessSector businessSector) {
+            this.businessSector = businessSector;
+        }
+
+        public boolean isQuickCommerce() {
+            return isQuickCommerce;
+        }
+
+        public void setQuickCommerce(boolean quickCommerce) {
+            isQuickCommerce = quickCommerce;
+        }
+
+        public String getSectorDisplayName() {
+            return sectorDisplayName;
+        }
+
+        public void setSectorDisplayName(String sectorDisplayName) {
+            this.sectorDisplayName = sectorDisplayName;
+        }
     }
 
     public static class RestaurantDetailDTO extends RestaurantSummaryDTO {
@@ -148,25 +273,77 @@ public class RestaurantDTOs {
         private String drugLicenseNumber;
         private String fssaiNumber;
 
-        public String getDrugLicenseNumber() { return drugLicenseNumber; }
-        public void setDrugLicenseNumber(String drugLicenseNumber) { this.drugLicenseNumber = drugLicenseNumber; }
-        public String getFssaiNumber() { return fssaiNumber; }
-        public void setFssaiNumber(String fssaiNumber) { this.fssaiNumber = fssaiNumber; }
+        public String getDrugLicenseNumber() {
+            return drugLicenseNumber;
+        }
 
-        public String getAddress() { return address; }
-        public void setAddress(String address) { this.address = address; }
-        public String getPhone() { return phone; }
-        public void setPhone(String phone) { this.phone = phone; }
-        public String getEmail() { return email; }
-        public void setEmail(String email) { this.email = email; }
-        public LocalTime getOpeningTime() { return openingTime; }
-        public void setOpeningTime(LocalTime openingTime) { this.openingTime = openingTime; }
-        public LocalTime getClosingTime() { return closingTime; }
-        public void setClosingTime(LocalTime closingTime) { this.closingTime = closingTime; }
-        public BigDecimal getPackagingFee() { return packagingFee; }
-        public void setPackagingFee(BigDecimal packagingFee) { this.packagingFee = packagingFee; }
-        public BigDecimal getTaxPercentage() { return taxPercentage; }
-        public void setTaxPercentage(BigDecimal taxPercentage) { this.taxPercentage = taxPercentage; }
+        public void setDrugLicenseNumber(String drugLicenseNumber) {
+            this.drugLicenseNumber = drugLicenseNumber;
+        }
+
+        public String getFssaiNumber() {
+            return fssaiNumber;
+        }
+
+        public void setFssaiNumber(String fssaiNumber) {
+            this.fssaiNumber = fssaiNumber;
+        }
+
+        public String getAddress() {
+            return address;
+        }
+
+        public void setAddress(String address) {
+            this.address = address;
+        }
+
+        public String getPhone() {
+            return phone;
+        }
+
+        public void setPhone(String phone) {
+            this.phone = phone;
+        }
+
+        public String getEmail() {
+            return email;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
+
+        public LocalTime getOpeningTime() {
+            return openingTime;
+        }
+
+        public void setOpeningTime(LocalTime openingTime) {
+            this.openingTime = openingTime;
+        }
+
+        public LocalTime getClosingTime() {
+            return closingTime;
+        }
+
+        public void setClosingTime(LocalTime closingTime) {
+            this.closingTime = closingTime;
+        }
+
+        public BigDecimal getPackagingFee() {
+            return packagingFee;
+        }
+
+        public void setPackagingFee(BigDecimal packagingFee) {
+            this.packagingFee = packagingFee;
+        }
+
+        public BigDecimal getTaxPercentage() {
+            return taxPercentage;
+        }
+
+        public void setTaxPercentage(BigDecimal taxPercentage) {
+            this.taxPercentage = taxPercentage;
+        }
     }
 
     public static class CreateRestaurantRequest {
@@ -186,35 +363,124 @@ public class RestaurantDTOs {
         private String drugLicenseNumber;
         private String sectorDisplayName;
 
-        public String getName() { return name; }
-        public void setName(String name) { this.name = name; }
-        public String getDescription() { return description; }
-        public void setDescription(String description) { this.description = description; }
-        public String getCuisines() { return cuisines; }
-        public void setCuisines(String cuisines) { this.cuisines = cuisines; }
-        public String getPhone() { return phone; }
-        public void setPhone(String phone) { this.phone = phone; }
-        public String getEmail() { return email; }
-        public void setEmail(String email) { this.email = email; }
-        public String getAddress() { return address; }
-        public void setAddress(String address) { this.address = address; }
-        public String getArea() { return area; }
-        public void setArea(String area) { this.area = area; }
-        public String getCity() { return city; }
-        public void setCity(String city) { this.city = city; }
-        public String getPincode() { return pincode; }
-        public void setPincode(String pincode) { this.pincode = pincode; }
-        public BigDecimal getCostForTwo() { return costForTwo; }
-        public void setCostForTwo(BigDecimal costForTwo) { this.costForTwo = costForTwo; }
-        public boolean isPureVeg() { return isPureVeg; }
-        public void setPureVeg(boolean pureVeg) { isPureVeg = pureVeg; }
-        public com.swiggy.foodapp.entities.BusinessSector getBusinessSector() { return businessSector; }
-        public void setBusinessSector(com.swiggy.foodapp.entities.BusinessSector businessSector) { this.businessSector = businessSector; }
-        public boolean isQuickCommerce() { return isQuickCommerce; }
-        public void setQuickCommerce(boolean quickCommerce) { isQuickCommerce = quickCommerce; }
-        public String getDrugLicenseNumber() { return drugLicenseNumber; }
-        public void setDrugLicenseNumber(String drugLicenseNumber) { this.drugLicenseNumber = drugLicenseNumber; }
-        public String getSectorDisplayName() { return sectorDisplayName; }
-        public void setSectorDisplayName(String sectorDisplayName) { this.sectorDisplayName = sectorDisplayName; }
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public void setDescription(String description) {
+            this.description = description;
+        }
+
+        public String getCuisines() {
+            return cuisines;
+        }
+
+        public void setCuisines(String cuisines) {
+            this.cuisines = cuisines;
+        }
+
+        public String getPhone() {
+            return phone;
+        }
+
+        public void setPhone(String phone) {
+            this.phone = phone;
+        }
+
+        public String getEmail() {
+            return email;
+        }
+
+        public void setEmail(String email) {
+            this.email = email;
+        }
+
+        public String getAddress() {
+            return address;
+        }
+
+        public void setAddress(String address) {
+            this.address = address;
+        }
+
+        public String getArea() {
+            return area;
+        }
+
+        public void setArea(String area) {
+            this.area = area;
+        }
+
+        public String getCity() {
+            return city;
+        }
+
+        public void setCity(String city) {
+            this.city = city;
+        }
+
+        public String getPincode() {
+            return pincode;
+        }
+
+        public void setPincode(String pincode) {
+            this.pincode = pincode;
+        }
+
+        public BigDecimal getCostForTwo() {
+            return costForTwo;
+        }
+
+        public void setCostForTwo(BigDecimal costForTwo) {
+            this.costForTwo = costForTwo;
+        }
+
+        public boolean isPureVeg() {
+            return isPureVeg;
+        }
+
+        public void setPureVeg(boolean pureVeg) {
+            isPureVeg = pureVeg;
+        }
+
+        public com.swiggy.foodapp.entities.BusinessSector getBusinessSector() {
+            return businessSector;
+        }
+
+        public void setBusinessSector(com.swiggy.foodapp.entities.BusinessSector businessSector) {
+            this.businessSector = businessSector;
+        }
+
+        public boolean isQuickCommerce() {
+            return isQuickCommerce;
+        }
+
+        public void setQuickCommerce(boolean quickCommerce) {
+            isQuickCommerce = quickCommerce;
+        }
+
+        public String getDrugLicenseNumber() {
+            return drugLicenseNumber;
+        }
+
+        public void setDrugLicenseNumber(String drugLicenseNumber) {
+            this.drugLicenseNumber = drugLicenseNumber;
+        }
+
+        public String getSectorDisplayName() {
+            return sectorDisplayName;
+        }
+
+        public void setSectorDisplayName(String sectorDisplayName) {
+            this.sectorDisplayName = sectorDisplayName;
+        }
     }
 }

@@ -3,5 +3,10 @@
 **/.next/
 **/node_modules/
 *.log
+*.zip
 uploads/
 .vscode/
+.idea/
+*.class
+.DS_Store
+

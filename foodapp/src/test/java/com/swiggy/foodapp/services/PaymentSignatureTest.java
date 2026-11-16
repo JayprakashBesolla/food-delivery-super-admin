@@ -57,3 +57,4 @@ public class PaymentSignatureTest {
         assertNotEquals(legitSignature, fraudSignature, "Signature must differ for different payment payloads");
     }
 }
+

@@ -55,3 +55,4 @@ public class FinancialSettlementTest {
         assertEquals(BigDecimal.ZERO.setScale(2), netPayout);
     }
 }
+

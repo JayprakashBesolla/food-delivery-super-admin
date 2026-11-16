@@ -246,7 +246,7 @@ public class SuperAdminService {
     public Restaurant rejectRestaurant(Long id, String reason, String adminEmail, String ip) {
         Restaurant r = restaurantRepository.findById(id)
                 .orElseThrow(() -> new NoSuchElementException("Restaurant not found: " + id));
-        r.setStatus(RestaurantStatus.INACTIVE);
+        r.setStatus(RestaurantStatus.REJECTED);
         Restaurant saved = restaurantRepository.save(r);
 
         auditLogService.recordAction(adminEmail, "SUPER_ADMIN", "REJECT_RESTAURANT",

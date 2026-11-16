@@ -5,5 +5,7 @@ public enum RestaurantStatus {
     PENDING_APPROVAL,
     CLOSED,
     SUSPENDED,
+    REJECTED,
     INACTIVE
 }
+

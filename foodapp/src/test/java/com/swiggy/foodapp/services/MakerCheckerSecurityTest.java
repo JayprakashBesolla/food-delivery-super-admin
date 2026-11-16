@@ -72,3 +72,4 @@ public class MakerCheckerSecurityTest {
         assertEquals(checker.getId(), task.getCheckerUser().getId());
     }
 }
+

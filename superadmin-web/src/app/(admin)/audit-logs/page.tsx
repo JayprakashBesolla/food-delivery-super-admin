@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { 
-  ShieldAlert, ShieldCheck, Filter, Download, Lock, 
+import {
+  ShieldAlert, ShieldCheck, Filter, Download, Lock,
   Search, Eye, RefreshCw, FileText, Database, UserCheck, CheckCircle
 } from 'lucide-react';
 import { PageHeader } from '@/components/ui/PageHeader';
@@ -64,9 +64,9 @@ export default function AuditLogsPage() {
     return logs.filter(item => {
       const matchesAction = selectedAction === 'ALL' || item.action === selectedAction;
       const matchesEntity = selectedEntity === 'ALL' || item.targetEntityType === selectedEntity;
-      
+
       const q = searchQuery.toLowerCase().trim();
-      const matchesSearch = !q || 
+      const matchesSearch = !q ||
         item.actorEmail?.toLowerCase().includes(q) ||
         item.action?.toLowerCase().includes(q) ||
         item.targetEntityType?.toLowerCase().includes(q) ||
@@ -82,10 +82,10 @@ export default function AuditLogsPage() {
   const stats = useMemo(() => {
     const total = logs.length;
     const distinctActors = new Set(logs.map(l => l.actorEmail)).size;
-    const sensitiveMutations = logs.filter(l => 
-      l.action?.includes('REFUND') || 
-      l.action?.includes('COMMISSION') || 
-      l.action?.includes('SETTINGS') || 
+    const sensitiveMutations = logs.filter(l =>
+      l.action?.includes('REFUND') ||
+      l.action?.includes('COMMISSION') ||
+      l.action?.includes('SETTINGS') ||
       l.action?.includes('BLOCK') ||
       l.action?.includes('PAYOUT')
     ).length;
@@ -180,16 +180,16 @@ export default function AuditLogsPage() {
       key: 'details',
       header: 'Operation Details',
       render: (item) => (
-        <span 
-          style={{ 
-            fontSize: '12px', 
+        <span
+          style={{
+            fontSize: '12px',
             color: 'var(--slate-700)',
             display: '-webkit-box',
             WebkitLineClamp: 1,
             WebkitBoxOrient: 'vertical',
             overflow: 'hidden',
             maxWidth: '260px'
-          }} 
+          }}
           title={item.details}
         >
           {item.details || '—'}
@@ -222,9 +222,9 @@ export default function AuditLogsPage() {
       width: '80px',
       align: 'center',
       render: (item) => (
-        <Button 
-          variant="outline" 
-          size="sm" 
+        <Button
+          variant="outline"
+          size="sm"
           onClick={() => setInspectLog(item)}
           title="Inspect Audit Event"
         >
@@ -245,18 +245,18 @@ export default function AuditLogsPage() {
         ]}
         actions={
           <div style={{ display: 'flex', gap: '10px' }}>
-            <Button 
-              variant="outline" 
-              size="sm" 
+            <Button
+              variant="outline"
+              size="sm"
               leftIcon={<RefreshCw size={14} className={loading ? 'animate-spin' : ''} />}
               onClick={loadData}
               disabled={loading}
             >
               Refresh
             </Button>
-            <Button 
-              variant="secondary" 
-              size="sm" 
+            <Button
+              variant="secondary"
+              size="sm"
               leftIcon={<Download size={14} />}
               onClick={handleExportCSV}
               disabled={filteredLogs.length === 0}
@@ -268,13 +268,13 @@ export default function AuditLogsPage() {
       />
 
       {error && (
-        <div style={{ 
-          padding: '12px 16px', 
-          backgroundColor: '#FEE2E2', 
-          border: '1px solid #F87171', 
-          borderRadius: '8px', 
-          color: '#B91C1C', 
-          fontSize: '13px' 
+        <div style={{
+          padding: '12px 16px',
+          backgroundColor: '#FEE2E2',
+          border: '1px solid #F87171',
+          borderRadius: '8px',
+          color: '#B91C1C',
+          fontSize: '13px'
         }}>
           <strong>Audit Service Error:</strong> {error}
         </div>
