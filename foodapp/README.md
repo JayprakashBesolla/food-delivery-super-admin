@@ -63,12 +63,12 @@ Unlike single-vertical food delivery apps or white-label single-tenant systems (
 - **MySQL Server** (running locally on port `3306`)
 
 ### 2. Configure Database
-In `src/main/resources/application.properties`:
+Configure your database connection in `src/main/resources/application.properties` or via environment variables (reference `application-example.properties`):
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/swiggy_foodapp?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
-spring.datasource.username=root
-spring.datasource.password=root
-server.port=8080
+spring.datasource.url=jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:swiggy_foodapp}?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+spring.datasource.username=${DB_USERNAME}
+spring.datasource.password=${DB_PASSWORD}
+server.port=${SERVER_PORT:8080}
 ```
 
 ### 3. Run the Application
